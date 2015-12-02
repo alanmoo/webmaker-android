@@ -53,6 +53,8 @@ public class WebmakerApplication extends Application {
         SimpleRouter.getSharedRouter().route("/users/:user/projects/:project/link", Link.class);
 
         SimpleRouter.getSharedRouter().route("/users/:user/projects/:project/pages/:page", Page.class);
+        SimpleRouter.getSharedRouter().route("/users/:user/projects/:project/pages/:page/editor", PageEditor.class);
+        SimpleRouter.getSharedRouter().route("/users/:user/projects/:project/pages/:page/editor/propertyName/:propertyName", Tinker.class);
         SimpleRouter.getSharedRouter().route("/users/:user/projects/:project/pages/:page/elements/:element/editor/:editor", Element.class);
         SimpleRouter.getSharedRouter().route("/users/:user/projects/:project/pages/:page/elements/:element/propertyName/:propertyName", Tinker.class);
     }

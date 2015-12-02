@@ -90,6 +90,15 @@
         </activity>
 
         <activity
+            android:name=".activity.PageEditor"
+            android:label="@string/title_activity_element"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.Page" />
+        </activity>
+
+        <activity
             android:name=".activity.Tinker"
             android:label="@string/title_activity_tinker"
             android:screenOrientation="portrait" >
